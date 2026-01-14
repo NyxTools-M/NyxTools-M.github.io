@@ -24,6 +24,7 @@
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
+      padding: 0 clamp(16px, 5vw, 48px);
       background-color: #1B1D1F; /* VISUALSTANDARD compliant */
     }
     
@@ -32,7 +33,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 24px;
+      gap: clamp(16px, 3vw, 24px);
     }
     
     /* Logo + Title row */
@@ -45,14 +46,14 @@
     
     /* Logo image */
     .logo {
-      height: 80px;
+      height: clamp(48px, 10vw, 80px);
       width: auto;
     }
     
     /* NyxTools. title - SF Pro (system font) */
     .title {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro", system-ui, sans-serif;
-      font-size: 48px;
+      font-size: clamp(28px, 6vw, 48px);
       font-weight: 400;
       color: #FFFFFF;
       letter-spacing: 0.02em;
@@ -62,7 +63,7 @@
     /* Manifesto text - JetBrains Mono */
     .manifesto {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 14px;
+      font-size: clamp(9px, 1.5vw, 14px);
       font-weight: 400;
       color: #FFFFFF;
       opacity: 0.85;
@@ -70,21 +71,22 @@
       letter-spacing: 0.05em;
       margin: 0;
       text-transform: uppercase;
+      text-align: center;
     }
     
     /* Social icons */
     .icons {
       position: absolute;
-      bottom: 40px;
+      bottom: clamp(24px, 5vw, 40px);
       left: 50%;
       transform: translateX(-50%);
       display: flex;
-      gap: 40px;
+      gap: clamp(24px, 4vw, 40px);
       z-index: 1;
     }
     .icons a {
-      width: 48px;
-      height: 48px;
+      width: clamp(32px, 5vw, 48px);
+      height: clamp(32px, 5vw, 48px);
       display: block;
     }
     .icons a img {
@@ -96,49 +98,6 @@
     }
     .icons a:hover img {
       opacity: 1;
-    }
-    
-    /* Responsive - Tablet */
-    @media (max-width: 768px) {
-      .title {
-        font-size: 36px;
-      }
-      .manifesto {
-        font-size: 12px;
-        padding: 0 24px;
-        text-align: center;
-      }
-      .icons {
-        gap: 32px;
-        bottom: 32px;
-      }
-      .icons a {
-        width: 40px;
-        height: 40px;
-      }
-    }
-    
-    /* Responsive - Mobile */
-    @media (max-width: 480px) {
-      .title {
-        font-size: 28px;
-      }
-      .manifesto {
-        font-size: 10px;
-        padding: 0 16px;
-        line-height: 1.8;
-      }
-      .content {
-        gap: 16px;
-      }
-      .icons {
-        gap: 24px;
-        bottom: 24px;
-      }
-      .icons a {
-        width: 36px;
-        height: 36px;
-      }
     }
   </style>
 </head>
