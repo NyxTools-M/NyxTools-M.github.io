@@ -97,6 +97,49 @@
     .icons a:hover img {
       opacity: 1;
     }
+    
+    /* Responsive - Tablet */
+    @media (max-width: 768px) {
+      .title {
+        font-size: 36px;
+      }
+      .manifesto {
+        font-size: 12px;
+        padding: 0 24px;
+        text-align: center;
+      }
+      .icons {
+        gap: 32px;
+        bottom: 32px;
+      }
+      .icons a {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    
+    /* Responsive - Mobile */
+    @media (max-width: 480px) {
+      .title {
+        font-size: 28px;
+      }
+      .manifesto {
+        font-size: 10px;
+        padding: 0 16px;
+        line-height: 1.8;
+      }
+      .content {
+        gap: 16px;
+      }
+      .icons {
+        gap: 24px;
+        bottom: 24px;
+      }
+      .icons a {
+        width: 36px;
+        height: 36px;
+      }
+    }
   </style>
 </head>
 <body>
