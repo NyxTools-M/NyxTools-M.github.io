@@ -16,6 +16,32 @@
       overflow: hidden;
       min-height: 100vh;
     }
+    
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: clamp(16px, 3vw, 24px) clamp(24px, 5vw, 48px);
+      display: flex;
+      gap: clamp(16px, 3vw, 32px);
+      z-index: 100;
+    }
+    .nav a {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      font-size: clamp(12px, 1.5vw, 14px);
+      color: #FFFFFF;
+      text-decoration: none;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .nav a:hover {
+      opacity: 1;
+    }
+    
     .container {
       position: relative;
       height: 100vh;
@@ -102,6 +128,11 @@
   </style>
 </head>
 <body>
+  <nav class="nav">
+    <a href="/login/">LOGIN</a>
+    <a href="/manifesto/">MANIFESTO</a>
+  </nav>
+  
   <div class="container">
     <div class="content">
       <div class="header">
