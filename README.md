@@ -18,11 +18,11 @@ void of theatrics.<br>
 
 ---
 ### Design Philosophy
-1. Simplicity is best.
-2. Designed solely upon AI rationality.
-3. Structured only for AI to perform at peak capacity.
-4. No decoration. No emotion. Only facts are required.
-5. Truth must always be concise.
+- Simplicity is best.
+- Designed solely upon AI rationality.
+- Structured only for AI to perform at peak capacity.
+- No decoration. No emotion. Only facts are required.
+- Truth must always be concise.
 
 ---
 ### What NyxTools Does Not Do
